@@ -21,13 +21,17 @@ const Project = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                src={project.image}
-                width={150}
-                height={150}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <motion.img
+                  src={project.image}
+                  width={150}
+                  height={150}
+                  alt={project.title}
+                  className="mb-6 rounded"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
