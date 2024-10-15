@@ -13,7 +13,7 @@ const Hero = () => {
             >
               Saurabh Singh
             </h1>
-            <span className="bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
+            <span className="animate-typing overflow-hidden whitespace-nowrap bg-gradient-to-r from-pink-300 via-slate-500 to bg-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">
               Developer
             </span>
             <p className="my-2 max-w-xl py-6 font-light tracking-tighter">
