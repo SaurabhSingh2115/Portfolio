@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className=" mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
         <a
-          href="https://drive.google.com/file/d/17MUvaGYpahbWF5Fu2_Tms0ISIpuUXeOX/view?usp=sharing"
+          href="https://drive.google.com/file/d/1az2PqPwXptdQCGIAAo3GaaVaBiiuPA6e/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
