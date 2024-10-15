@@ -5,8 +5,11 @@ export default {
     extend: {
       keyframes: {
         typing: {
-          "0%": { width: "0%", visibility: "hidden" },
-          "100%": { width: "100%" },
+          "0%": { width: "0%" },
+          "50%": { width: "100%" },
+          "55%": { width: "100%" },
+          "65%": { width: "0%" },
+          "100%": { width: "0%" },
         },
         blink: {
           "50%": { borderColor: "transparent" },
@@ -14,7 +17,7 @@ export default {
         },
       },
       animation: {
-        typing: "typing 2s steps(20, end) forwards, blink 0.7s infinite",
+        typing: "typing 8s steps(20) infinite, blink 0.7s infinite",
       },
     },
   },
