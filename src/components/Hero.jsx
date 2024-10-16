@@ -1,6 +1,6 @@
-import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/saurabhSingh.png";
 import { motion } from "framer-motion";
+import { HERO_CONTENT } from "../constants";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -10,6 +10,7 @@ const container = (delay) => ({
     transition: { duration: 0.5, delay: delay },
   },
 });
+
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -20,30 +21,29 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-4 text-6xl font-bold tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Saurabh Singh
+              Saurabh Singh.
             </motion.h1>
-            <div className="h-12 overflow-hidden">
-              <motion.span
-                variants={container(0.5)}
-                initial="hidden"
-                animate="visible"
-                className="animate-typing inline-block overflow-hidden whitespace-nowrap border-r-4 border-white bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text pr-1 text-3xl tracking-tight text-transparent"
-              >
-                Developer
-              </motion.span>
-            </div>
+            <motion.h2
+              variants={container(0.5)}
+              initial="hidden"
+              animate="visible"
+              className="text-4xl font-semibold text-gray-300"
+            >
+              I build things for the web.
+            </motion.h2>
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="mt-4 max-w-xl text-lg font-light text-gray-300"
             >
               {HERO_CONTENT}
             </motion.p>
           </div>
         </div>
+
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
             <motion.img
@@ -52,6 +52,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt="Saurabh Singh"
+              className="w-85 h-81 rounded-full mt-[-70px] ml-20"
             />
           </div>
         </div>

@@ -10,7 +10,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="my-10 text-center text-4xl"
       >
-        Get in Touch
+        Get In Touch
       </motion.h1>
       <div className="text-center tracking-tighter">
         <motion.p
@@ -21,7 +21,7 @@ const Contact = () => {
         >
           {CONTACT.phoneNo}
         </motion.p>
-        <a href="#" className="border-b">
+        <a href={`mailto:${CONTACT.email}`} className="border-b">
           {CONTACT.email}
         </a>
       </div>
